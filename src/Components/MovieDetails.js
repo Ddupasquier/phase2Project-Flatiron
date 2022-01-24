@@ -7,7 +7,7 @@ function MovieDetails() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:8000/movies/${id}`)
+    fetch(`http://localhost:3000/movies/${id}`)
       .then((resp) => resp.json())
       .then((data) => setMovie(data));
   }, [id]);
@@ -32,11 +32,11 @@ function MovieDetails() {
     <div>
       <button><Link to="/movies">Back</Link></button><br/>
       <img src={poster} />
-      <p>{title}</p>
-      <p>{rating}</p>
-      <p>{runtime}</p>
-      <p>{release}</p>
-      <p>{director}</p>
+      <h2>{title}</h2>
+      <p>Rating: <b>{rating}</b></p>
+      <p>Runtime: {runtime}</p>
+      <p>Release Date: {release}</p>
+      <p>Director: {director}</p>
     </div>
   );
 }

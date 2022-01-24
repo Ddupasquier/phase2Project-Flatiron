@@ -25,4 +25,10 @@ export const sidenavData = [
         icon: <MdIcons.MdLocalMovies />,
         className: 'nav-text',
     },
+    {
+        title: 'Top Movies',
+        path: '/topmovies',
+        icon: <MdIcons.MdLocalMovies />,
+        className: 'nav-text',
+    },
 ]

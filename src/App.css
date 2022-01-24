@@ -8,19 +8,122 @@
 }
 
 body {
+  /* background-image: url('https://pbblogassets.s3.amazonaws.com/uploads/2015/09/Film-Lingo.jpg'); */
   background-color: rgb(141, 0, 0);
   overflow: hidden;
   margin: auto;
-  /* text-align: center; */
 }
 
 #container {
   background-color: rgba(255, 255, 255, 0.582);
   position: absolute;
   margin: 18%;
-  min-width: 70%;
+  margin-top: 80px;
+  min-width: 60%;
+  text-align: center;
+  height: 100%;
+  align-items: center;
 }
 
 #container img {
   max-width: 40%;
+}
+
+.topmovies {
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100vh;
+}
+
+.day, .daymovie {
+  border-right: solid 1px;
+}
+
+.year, .yearmovie {
+  border-left: solid 1px;
+}
+
+.day, .month, .year {
+  border-bottom: solid 1px;
+}
+
+.navbar {
+  background-color: rgb(80, 80, 80);
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  /* align-items: center */
+  padding-left: 10px;
+}
+
+.menu-bars {
+  margin-left: 1rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-bars {
+  margin-top: 10px;
+  margin-left: 1rem;
+  font-size: 4rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: rgb(80, 80, 80);
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2px 0px 2px 0px;
+  list-style: none;
+  height: 30px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: red;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color:aqua;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  margin-left: 5px;
 }

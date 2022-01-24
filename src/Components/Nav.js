@@ -4,7 +4,6 @@ import { FiAlignJustify } from "react-icons/fi";
 import { CgCloseO } from "react-icons/cg";
 import { sidenavData } from "../sidenavData";
 import { IconContext } from "react-icons";
-import navStyle from "../sidenav.css";
 
 function Nav() {
   const [sidebar, setSidebar] = useState(false);

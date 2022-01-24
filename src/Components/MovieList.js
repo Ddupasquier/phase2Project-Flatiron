@@ -5,6 +5,7 @@ function MovieList({ movies }) {
   const movieComponents = movies.map((movie) => {
     return (
       <Movie
+        key={movie.id}
         id={movie.id}
         rating={movie.rating}
         title={movie.title}

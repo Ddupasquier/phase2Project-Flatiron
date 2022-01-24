@@ -1,6 +1,6 @@
 import React from 'react';
 function Welcome() {
-    return ( <div>WELCOME</div> );
+    return ( <div className="home">WELCOME</div> );
 }
 
 export default Welcome;

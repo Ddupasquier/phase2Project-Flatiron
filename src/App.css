@@ -1,37 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.Nav * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
 body {
   background-color: rgb(141, 0, 0);
   overflow: hidden;
   margin: auto;
-  text-align: center;
-}
-
-#mySidenav {
-  border-style: solid;
-  border-color: white;
-  position: absolute;
-  top: 0;
-  width: 50px;
-  left: 0;
-  bottom: 0;
-}
-
-#mySidenav img:hover {
-  background-color: white;
-  color: black;
+  /* text-align: center; */
 }
 
 #container {
   background-color: rgba(255, 255, 255, 0.582);
-  /* border-style: solid; */
-  /* border-color: white; */
   position: absolute;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  margin-left: 7rem;
-  min-width: 60%;
-  max-width: 80%;
-  padding: 3%;
+  margin: 18%;
+  min-width: 70%;
 }
- #container img {
-   max-width: 40%;
- }
+
+#container img {
+  max-width: 40%;
+}

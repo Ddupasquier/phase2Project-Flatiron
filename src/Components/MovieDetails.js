@@ -30,7 +30,7 @@ function MovieDetails() {
 
   return (
     <div>
-      <button><Link to="/movies">Back</Link></button><br/>
+      <button className="back"><Link to="/movies"> {"<"} </Link></button><br/>
       <img src={poster} />
       <h2>{title}</h2>
       <p>Rating: <b>{rating}</b></p>

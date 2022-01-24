@@ -18,15 +18,19 @@ body {
   background-color: rgba(255, 255, 255, 0.582);
   position: absolute;
   margin: 18%;
-  margin-top: 80px;
+  margin-top: 0;
   min-width: 60%;
-  text-align: center;
+  /* text-align: center; */
   height: 100%;
-  align-items: center;
+  padding: 10px;
 }
 
 #container img {
-  max-width: 40%;
+  max-width: 30%;
+  float: left;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 15px;
 }
 
 .topmovies {
@@ -36,25 +40,20 @@ body {
   grid-template-rows: auto 100vh;
 }
 
-.day, .daymovie {
+.day,
+.daymovie {
   border-right: solid 1px;
 }
 
-.year, .yearmovie {
+.year,
+.yearmovie {
   border-left: solid 1px;
 }
 
-.day, .month, .year {
+.day,
+.month,
+.year {
   border-bottom: solid 1px;
-}
-
-.navbar {
-  background-color: rgb(80, 80, 80);
-  height: 80px;
-  display: flex;
-  justify-content: start;
-  /* align-items: center */
-  padding-left: 10px;
 }
 
 .menu-bars {
@@ -75,7 +74,7 @@ body {
   width: 200px;
   height: 100vh;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: -100%;
@@ -117,7 +116,7 @@ body {
 }
 
 .navbar-toggle {
-  background-color:aqua;
+  background-color: aqua;
   width: 100%;
   height: 80px;
   display: flex;

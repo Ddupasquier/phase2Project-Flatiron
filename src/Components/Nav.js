@@ -1,14 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import "../sidenav.css";
+// import "../sidenav.js";
 
 function Nav() {
   return (
-  <nav>
-      <NavLink to="/home">Home </NavLink>
-      <NavLink to="/about">About </NavLink>
-      <NavLink to="whatever path we want">Whatever </NavLink>
-  </nav>
-  )
+    <div id="mySidenav" class="sidenav">
+      <Link to="/welcome">Welcome</Link>
+      <br />
+      <Link to="/addmovie">Add Movie</Link>
+      <br />
+      <Link to="/movies">Movies</Link>
+    </div>
+  );
 }
 
 export default Nav;

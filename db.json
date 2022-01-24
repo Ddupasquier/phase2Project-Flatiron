@@ -1,0 +1,42 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Social Network",
+      "rating": "A",
+      "runtime": "120 minutes",
+      "release": "October 1, 2010",
+      "director": "David Fincher",
+      "writers": ["Aaron Sorkin"],
+      "actors": [
+        "Jesse Eisenberg",
+        "Andrew Garfield",
+        "Justin Timberlake",
+        "Armie Hammer",
+        "Max Minghella"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjEtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=lB95KLmpLR4"
+    },
+    {
+      "id": 2,
+      "title": "The Shawshank Redemption",
+      "rating": "A",
+      "runtime": "142 minutes",
+      "release": "September 23, 1994",
+      "director": "Frank Darabont",
+      "writers": ["Frank Darabont"],
+      "actors": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton",
+        "William Sadler",
+        "Clancy Brown",
+        "Gil Bellows",
+        "James Whitmore"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/watch?v=NmzuHjWmXOc"
+    }
+  ]
+}

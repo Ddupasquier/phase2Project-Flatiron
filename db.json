@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "The Social Network",
-      "rating": "A",
+      "rating": "B",
       "runtime": "120 minutes",
       "release": "October 1, 2010",
       "director": "David Fincher",
@@ -16,7 +16,7 @@
         "Max Minghella"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjEtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-      "trailer": "https://www.youtube.com/watch?v=lB95KLmpLR4"
+      "trailer": "https://www.youtube.com/embed/lB95KLmpLR4"
     },
     {
       "id": 2,
@@ -36,7 +36,7 @@
         "James Whitmore"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
-      "trailer": "https://www.youtube.com/watch?v=NmzuHjWmXOc"
+      "trailer": "https://www.youtube.com/embed/NmzuHjWmXOc"
     }
   ]
 }

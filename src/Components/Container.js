@@ -11,7 +11,7 @@ function Container() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/movies")
+    fetch("http://localhost:8001/movies")
       .then((resp) => resp.json())
       .then((receivedMovies) => setMovies(receivedMovies));
   }, []);

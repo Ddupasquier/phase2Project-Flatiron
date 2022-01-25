@@ -8,8 +8,7 @@
 }
 
 body {
-  /* background-image: url('https://pbblogassets.s3.amazonaws.com/uploads/2015/09/Film-Lingo.jpg'); */
-  background-color: rgb(141, 0, 0);
+  background-color:  rgb(13, 61, 61);
   overflow: hidden;
   margin: auto;
 }
@@ -74,11 +73,13 @@ body {
   width: 200px;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   position: fixed;
   top: 0;
   left: -100%;
   transition: 850ms;
+  /* padding-left: 0;
+  margin-left: 0; */
 }
 
 .nav-menu.active {
@@ -91,7 +92,7 @@ body {
   justify-content: start;
   align-items: center;
   padding: 2px 0px 2px 0px;
-  list-style: none;
+  list-style-type: none;
   height: 30px;
 }
 
@@ -116,7 +117,7 @@ body {
 }
 
 .navbar-toggle {
-  background-color: aqua;
+  background-color: rgb(75, 173, 173);
   width: 100%;
   height: 80px;
   display: flex;

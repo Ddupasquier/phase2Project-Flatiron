@@ -10,7 +10,6 @@ function AddMovie() {
   const [actors, setActors] = useState([]);
   const [poster, setPoster] = useState("");
   const [trailer, setTrailer] = useState("");
-  const [movieSubmission, setMovieSubmission] = useState({});
   function handleSubmit(e) {
     e.preventDefault();
 

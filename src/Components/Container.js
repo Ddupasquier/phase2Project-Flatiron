@@ -6,7 +6,6 @@ import MovieList from "./MovieList";
 import MovieDetails from "./MovieDetails";
 import TopMovies from "./TopMovies";
 
-
 function Container() {
   const [movies, setMovies] = useState([]);
 
@@ -19,20 +18,20 @@ function Container() {
   return (
     <div id="container">
       <Switch>
-        <Route path="/welcome">
-          <Welcome />
-        </Route>
-        <Route path="/addmovie">
+        <Route path="/movies/new">
           <AddMovie />
         </Route>
-        <Route exact path="/movies">
-          <MovieList movies={movies} />
+        <Route path="/movies/top">
+          <TopMovies />
         </Route>
         <Route path="/movies/:id">
           <MovieDetails />
         </Route>
-        <Route path="/topmovies">
-          <TopMovies />
+        <Route exact path="/movies">
+          <MovieList movies={movies} />
+        </Route>
+        <Route path="/">
+          <Welcome />
         </Route>
         <Route path="*">
           <h1>404: You done goofed</h1>

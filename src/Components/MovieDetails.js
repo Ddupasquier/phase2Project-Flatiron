@@ -28,15 +28,30 @@ function MovieDetails() {
     trailer,
   } = movie;
 
+  console.log(trailer);
+
   return (
     <div>
-      <button className="back"><Link to="/movies"> {"<"} </Link></button><br/>
+      <button className="back">
+        <Link to="/movies"> {"<"} </Link>
+      </button>
+      <br />
       <img src={poster} />
       <h2>{title}</h2>
-      <p>Rating: <b>{rating}</b></p>
+      <p>
+        Rating: <b>{rating}</b>
+      </p>
       <p>Runtime: {runtime}</p>
       <p>Release Date: {release}</p>
-      <p>Director: {director}</p>
+      <p>Directed By: {director}</p>
+      <p>Written By: {writers.join(", ")}</p>
+      <p>Starring: {actors.join(", ")}</p>
+      <iframe
+        src={trailer}
+        height="400px"
+        width="600px"
+        title="movie trailer"
+      ></iframe>
     </div>
   );
 }

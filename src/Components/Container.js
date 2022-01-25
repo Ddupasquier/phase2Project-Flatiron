@@ -15,11 +15,16 @@ function Container() {
       .then((receivedMovies) => setMovies(receivedMovies));
   }, []);
 
+  function addNewMovie(newMovie) {
+    const newMovieList = [...movies, newMovie];
+    setMovies(newMovieList)
+  }
+
   return (
     <div id="container">
       <Switch>
         <Route path="/movies/new">
-          <AddMovie />
+          <AddMovie addNewMovie={addNewMovie} />
         </Route>
         <Route path="/movies/top">
           <TopMovies />

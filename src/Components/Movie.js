@@ -7,7 +7,7 @@ function Movie({ id, rating, title, director, runtime }) {
             <td>{rating}</td>
             <td><Link to={`/movies/${id}`}>{title}</Link></td>
             <td>{director}</td>
-            <td>{runtime}</td>
+            <td>{runtime} minutes</td>
         </tr>
     );
 }

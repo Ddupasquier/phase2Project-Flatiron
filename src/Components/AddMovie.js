@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import * as MdIcons from "react-icons/md";
 
-function AddMovie() {
+function AddMovie({ addNewMovie }) {
   const [title, setTitle] = useState("");
   const [rating, setRating] = useState();
   const [runtime, setRuntime] = useState("");
   const [release, setRelease] = useState("");
   const [director, setDirector] = useState("");
-  const [writers, setWriters] = useState("");
+  const [writers, setWriters] = useState([]);
   const [actors, setActors] = useState([]);
   const [poster, setPoster] = useState("");
   const [trailer, setTrailer] = useState("");
@@ -31,79 +32,97 @@ function AddMovie() {
       }),
     })
       .then((r) => r.json())
-      .then(() => {
+      .then((newMovie) => {
         setTitle("");
         setRuntime("");
         setDirector("");
-        setWriters("");
+        setWriters([]);
         setActors([]);
         setRating("");
         setPoster("");
         setTrailer("");
         setRelease("");
+        addNewMovie(newMovie);
       });
   }
   return (
-    <div>
+    <div className="ui inverted segment form">
+      <h1 style={{ "text-align": "center" }}>
+        <MdIcons.MdOutlineLocalMovies /> Add A Movie!!!{" "}
+        <MdIcons.MdOutlineLocalMovies />
+      </h1>
       <form onSubmit={handleSubmit}>
-        <input
-          onChange={(e) => setTitle(e.target.value)}
-          type="text"
-          name="title"
-          placeholder="Title"
-          value={title}
-        />
-        <br />
-        <input
-          onChange={(e) => setRuntime(e.target.value)}
-          type="text"
-          name="runtime"
-          placeholder="Runtime"
-          value={runtime}
-        />
-        <br />
-        <input
-          onChange={(e) => setDirector(e.target.value)}
-          type="text"
-          name="director"
-          placeholder="Director"
-          value={director}
-        />
-        <br />
-        <input
-          onChange={(e) => setWriters(e.target.value)}
-          type="text"
-          name="writers"
-          placeholder="Writers"
-          value={writers}
-        />
-        <br />
-        <input
-          onChange={(e) => setActors(e.target.value.split(","))}
-          type="text"
-          name="actors"
-          placeholder="Actors"
-          value={actors}
-        />
-        <br />
-        <input
-          onChange={(e) => setPoster(e.target.value)}
-          type="text"
-          name="poster"
-          placeholder="Poster"
-          value={poster}
-        />
-        <br />
-        <input
-          onChange={(e) => setTrailer(e.target.value)}
-          type="text"
-          name="trailer"
-          placeholder="Trailer"
-          value={trailer}
-        />
-        <br />
-        <label htmlFor="select">Select Rating: </label>
-        <select onChange={(e) => setRating(e.target.value)} value={rating}>
+        <div className="ui input fluid">
+          <input
+            onChange={(e) => setTitle(e.target.value)}
+            type="text"
+            name="title"
+            placeholder="Title"
+            value={title}
+          />
+        </div>
+        <div className="ui input fluid">
+          <input
+            onChange={(e) => setRuntime(e.target.value)}
+            type="text"
+            name="runtime"
+            placeholder="Runtime (in min.)"
+            value={runtime}
+          />
+        </div>
+        <div className="ui input fluid">
+          <input
+            onChange={(e) => setDirector(e.target.value)}
+            type="text"
+            name="director"
+            placeholder="Director"
+            value={director}
+          />
+        </div>
+        <div className="ui input fluid">
+          <input
+            onChange={(e) => setWriters(e.target.value.split(","))}
+            type="text"
+            name="writers"
+            placeholder="Writers (separate with a comma)"
+            value={writers}
+          />
+        </div>
+        <div className="ui input fluid">
+          <input
+            onChange={(e) => setActors(e.target.value.split(","))}
+            type="text"
+            name="actors"
+            placeholder="Actors (separate with a comma)"
+            value={actors}
+          />
+        </div>
+        <div class="ui labeled input fluid">
+          <div class="ui label">http://</div>
+          <input
+            onChange={(e) => setPoster(e.target.value)}
+            type="text"
+            name="poster"
+            placeholder="Poster URL"
+            value={poster}
+          />
+        </div>
+        <div class="ui labeled input fluid">
+          <div class="ui label">http://</div>
+          <input
+            onChange={(e) => setTrailer(e.target.value)}
+            type="text"
+            name="trailer"
+            placeholder="Trailer URL"
+            value={trailer}
+          />
+        </div>
+        <label htmlFor="select">Rate Movie: </label>
+        <select
+          onChange={(e) => setRating(e.target.value)}
+          value={rating}
+          className="fluid"
+        >
           <option value=""></option>
           <option value="A">A</option>
           <option value="B">B</option>
@@ -111,8 +130,7 @@ function AddMovie() {
           <option value="D">D</option>
           <option value="F">F</option>
         </select>
-        <br />
-        <label htmlFor="release">Set Release Date</label>
+        <label htmlFor="release">Date Released:</label>
         <br />
         <input
           onChange={(e) => setRelease(e.target.value)}
@@ -121,7 +139,10 @@ function AddMovie() {
           value={release}
         />
         <br />
-        <button type="submit">Submit Movie</button>
+        <br />
+        <button className="ui button" type="submit">
+          Submit Movie
+        </button>
       </form>
     </div>
   );

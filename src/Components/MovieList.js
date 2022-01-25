@@ -33,19 +33,22 @@ function MovieList({ movies }) {
 
   return (
     <>
-      <p>Sort By:</p>
-      <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
-        <option value="">None</option>
-        <option value="title">Title</option>
-        <option value="rating">Rating</option>
-      </select>
-      <br></br>
-      <input
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        type="text"
-        placeholder="Search..."
-      ></input>
+    
+      <div className="ui segment">
+        <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <option value="">Sort By</option>
+          <option value="title">Title</option>
+          <option value="rating">Rating</option>
+        </select>
+        <div className="ui input fluid">
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            type="text"
+            placeholder="Search..."
+          ></input>
+        </div>
+      </div>
       <table className="ui celled striped padded table">
         <tbody>
           <tr>
@@ -64,9 +67,7 @@ function MovieList({ movies }) {
           </tr>
           {movieComponents}
         </tbody>
-        
       </table>
-      
     </>
   );
 }

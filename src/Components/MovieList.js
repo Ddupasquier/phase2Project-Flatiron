@@ -34,7 +34,7 @@ function MovieList({ movies }) {
   return (
     <>
       <div className="ui segment">
-        <div class="ui action input fluid">
+        <div className="ui action input fluid">
           <input
             type="text"
             placeholder="Search..."
@@ -42,7 +42,7 @@ function MovieList({ movies }) {
             onChange={(e) => setSearch(e.target.value)}
           />
           <select
-            class="ui compact selection dropdown"
+            className="ui compact selection dropdown"
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
           >

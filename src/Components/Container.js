@@ -12,11 +12,11 @@ function Container() {
   useEffect(() => {
     fetch("http://localhost:8001/movies")
       .then((resp) => resp.json())
-      .then((receivedMovies) => setMovies(receivedMovies));
+      .then((receivedMovies) => setMovies(receivedMovies.reverse()));
   }, []);
 
   function addNewMovie(newMovie) {
-    const newMovieList = [...movies, newMovie];
+    const newMovieList = [newMovie, ...movies];
     setMovies(newMovieList)
   }
 

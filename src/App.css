@@ -13,9 +13,10 @@ body {
   /* text-align: center; */
   height: 100%;
   padding: 10px;
+  overflow: auto;
 }
 
-#container img {
+#container .poster {
   max-width: 30%;
   float: left;
   margin-top: 15px;
@@ -23,11 +24,15 @@ body {
   margin-left: 15px;
 }
 
+.card {
+  text-align: center;
+}
+
 .topmovies {
   /* padding-left: 10px; */
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto 100vh;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .day,
@@ -140,4 +145,9 @@ span {
 
 .form {
   text-align: left;
+}
+
+.iframe {
+  margin-top: 50px;
+  text-align: center;
 }

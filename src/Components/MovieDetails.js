@@ -52,6 +52,7 @@ function MovieDetails() {
       <p>Directed By: {director}</p>
       <p>Written By: {writers.join(", ")}</p>
       <p>Starring: {actors.join(", ")}</p>
+      
       <div className="iframe">
       <iframe
       style={{border: "3px solid teal"}}

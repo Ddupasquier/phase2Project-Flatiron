@@ -1,47 +1,60 @@
 import React from "react";
-import { Link } from "react-router-dom";
-function TopMovies() {
+import Card from "./Card";
+
+function TopMovies({ movies }) {
+  const sortedMovies = [...movies].sort(compare);
+  const length = sortedMovies.length;
+  const topTenMovies = [];
+  const bottomTenMovies = [];
+  buildTopTen();
+  buildBottomTen();
+  console.log(topTenMovies, bottomTenMovies);
+
+  function compare(a, b) {
+    if (parseInt(a.likes) < parseInt(b.likes)) {
+      return -1;
+    }
+    return 0;
+  }
+
+  function buildBottomTen() {
+    for (let i = 0; i < 10; i++) {
+      bottomTenMovies.push(sortedMovies[i]);
+    }
+  }
+
+  function buildTopTen() {
+    for (let i = length - 1; i > length - 11; i--) {
+      topTenMovies.push(sortedMovies[i]);
+    }
+  }
+
+  const topComponents = topTenMovies.map((movie) => {
+    return (
+      <Card id={movie.id} title={movie.title} poster={movie.poster} likes={movie.likes} />
+    );
+  });
+
+  const bottomComponents = bottomTenMovies.map((movie) => {
+    return (
+      <Card id={movie.id} title={movie.title} poster={movie.poster} likes={movie.likes} />
+    );
+  });
+
   return (
     <div className="topmovies">
-      <div className="day">
+      <div>
         <h2>Top 10 Movies</h2>
+        <hr />
       </div>
-      <div className="month">
+      <div>
         <h2>Bottom 10 Movies</h2>
+        <hr />
       </div>
-      <div className="year">
-        <div class="ui card">
-          <Link className="image">
-            <img
-              className="cardImage"
-              src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlDKRNksTPneIfs6kexQxt4E-WWbN13h0GD5pAUaT6N4sN16Gg"
-              alt="movietitle"
-            />
-          </Link>
-          <div class="content">
-            <h3>Steve Jobs</h3>
-            <div class="meta">
-              <p>Last Seen 2 days ago</p>
-            </div>
-          </div>
-        </div>
-        <div class="ui card">
-          <Link className="image">
-            <img
-              className="cardImage"
-              src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlDKRNksTPneIfs6kexQxt4E-WWbN13h0GD5pAUaT6N4sN16Gg"
-              alt="movietitle"
-            />
-          </Link>
-          <div class="content">
-            <p>Steve Jobs</p>
-            <div class="meta">
-              <p>Last Seen 2 days ago</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="daymovie">cards</div>
+
+      <div id="top10">{topComponents}</div>
+
+      <div id="bottom10">{bottomComponents}</div>
     </div>
   );
 }

@@ -27,7 +27,7 @@ function Container() {
           <AddMovie addNewMovie={addNewMovie} />
         </Route>
         <Route path="/movies/top">
-          <TopMovies />
+          <TopMovies movies={movies} />
         </Route>
         <Route path="/movies/:id">
           <MovieDetails />

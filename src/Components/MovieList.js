@@ -62,9 +62,11 @@ function MovieList({ movies }) {
               <h3 className="ui center aligned header">Runtime</h3>
             </th>
           </tr>
+          {movieComponents}
         </tbody>
+        
       </table>
-      <div className="trailer">{movieComponents}</div>
+      
     </>
   );
 }

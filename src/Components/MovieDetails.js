@@ -36,7 +36,7 @@ function MovieDetails() {
         <Link to="/movies"> {"<"} </Link>
       </button>
       <br />
-      <img src={poster} />
+      <img src={poster} alt={title}/>
       <h2>{title}</h2>
       <p>
         Rating: <b>{rating}</b>

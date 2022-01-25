@@ -9,13 +9,13 @@ import * as MdIcons from "react-icons/md"
 export const sidenavData = [
     {
         title: 'Home',
-        path: '/welcome',
+        path: '/',
         icon: <CgIcons.CgHello />,
         className: 'nav-text',
     },
     {
         title: 'Add Movie',
-        path: '/addmovie',
+        path: '/movies/new',
         icon: <MdIcons.MdAddBox />,
         className: 'nav-text',
     },
@@ -27,7 +27,7 @@ export const sidenavData = [
     },
     {
         title: 'Top Movies',
-        path: '/topmovies',
+        path: '/movies/top',
         icon: <MdIcons.MdLocalMovies />,
         className: 'nav-text',
     },

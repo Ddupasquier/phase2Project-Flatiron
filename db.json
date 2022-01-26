@@ -7,7 +7,9 @@
       "runtime": "120",
       "release": "October 1, 2010",
       "director": "David Fincher",
-      "writers": ["Aaron Sorkin"],
+      "writers": [
+        "Aaron Sorkin"
+      ],
       "actors": [
         "Jesse Eisenberg",
         "Andrew Garfield",
@@ -26,7 +28,9 @@
       "runtime": "142",
       "release": "September 23, 1994",
       "director": "Frank Darabont",
-      "writers": ["Frank Darabont"],
+      "writers": [
+        "Frank Darabont"
+      ],
       "actors": [
         "Tim Robbins",
         "Morgan Freeman",
@@ -47,7 +51,11 @@
       "runtime": "87",
       "release": "November 14, 2004",
       "director": "Stephen Hillenburg",
-      "writers": ["Stephen Hillenburg", "Tim Hill", "Derek Drymon"],
+      "writers": [
+        "Stephen Hillenburg",
+        "Tim Hill",
+        "Derek Drymon"
+      ],
       "actors": [
         "Tom Kenny",
         "Jeffrey Tambor",
@@ -65,8 +73,15 @@
       "runtime": "101",
       "release": "2009-06-18",
       "director": "Hayao Miyazaki",
-      "writers": ["Hayao Miyazaki", " Melissa Mathison"],
-      "actors": ["Cate Blanchett", " Matt Damon", " Liam Neeson"],
+      "writers": [
+        "Hayao Miyazaki",
+        " Melissa Mathison"
+      ],
+      "actors": [
+        "Cate Blanchett",
+        " Matt Damon",
+        " Liam Neeson"
+      ],
       "poster": "https://i.ebayimg.com/images/g/YpgAAOxygo9Q5Iq9/s-l300.jpg",
       "trailer": "https://www.youtube.com/embed/bskgNOXbdiE",
       "likes": "25",
@@ -78,7 +93,10 @@
       "runtime": "181",
       "release": "2019-04-22",
       "director": "The Russo Bros.",
-      "writers": ["Christopher Markus", " Stephen McFeely"],
+      "writers": [
+        "Christopher Markus",
+        " Stephen McFeely"
+      ],
       "actors": [
         "Robert Downey Jr.",
         " Chris Evans",
@@ -103,8 +121,16 @@
       "runtime": "68",
       "release": "1965-07-27",
       "director": " Bill Rebane",
-      "writers": [" Bill Rebane", " Dok Stanford", " Bill Rebane"],
-      "actors": ["Philip Morton", " June Travis", " George Perry"],
+      "writers": [
+        " Bill Rebane",
+        " Dok Stanford",
+        " Bill Rebane"
+      ],
+      "actors": [
+        "Philip Morton",
+        " June Travis",
+        " George Perry"
+      ],
       "poster": "https://m.media-amazon.com/images/I/51OCsU2NqZL._AC_.jpg",
       "trailer": "https://www.youtube.com/embed/bBgpFENBIw0",
       "likes": "2",
@@ -116,7 +142,9 @@
       "runtime": "156",
       "release": "2021-12-10",
       "director": " Steven Spielberg",
-      "writers": [" Tony Kushner"],
+      "writers": [
+        " Tony Kushner"
+      ],
       "actors": [
         "Ansel Elgort",
         " Ariana DeBose",
@@ -136,8 +164,14 @@
       "runtime": "99",
       "release": "2003-07-27",
       "director": "Tommy Wiseau",
-      "writers": ["Tommy Wiseau"],
-      "actors": ["Tommy Wiseau", "Juliette Danielle", "Greg Sestero"],
+      "writers": [
+        "Tommy Wiseau"
+      ],
+      "actors": [
+        "Tommy Wiseau",
+        "Juliette Danielle",
+        "Greg Sestero"
+      ],
       "poster": "https://m.media-amazon.com/images/M/MV5BYjEzN2FlYmYtNDkwMC00NGFkLWE5ODctYmE5NmYxNzE2MmRiXkEyXkFqcGdeQXVyMjMwODc5Mw@@._V1_.jpg",
       "trailer": "https://www.youtube.com/embed/tfMTHIwTUXA",
       "id": 8,
@@ -149,8 +183,14 @@
       "runtime": "82",
       "release": "1987-03-29",
       "director": "John Grissmer",
-      "writers": [" Bruce Rubin"],
-      "actors": ["Louise Lasser", "Mark Soper", "Julie Gordon"],
+      "writers": [
+        " Bruce Rubin"
+      ],
+      "actors": [
+        "Louise Lasser",
+        "Mark Soper",
+        "Julie Gordon"
+      ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMzVmMjQzMDYtOTlmZS00MDdhLWEwODItNzdkMTQ2OTNlNjczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "trailer": "https://www.youtube.com/embed/K5EeBAcRq-U",
       "id": 9,
@@ -162,8 +202,14 @@
       "runtime": "102",
       "release": "2014-11-18",
       "director": "Kevin Smith",
-      "writers": ["Kevin Smith"],
-      "actors": [" Justin Long", " Michael Parks", " Haley Joel Osment"],
+      "writers": [
+        "Kevin Smith"
+      ],
+      "actors": [
+        " Justin Long",
+        " Michael Parks",
+        " Haley Joel Osment"
+      ],
       "poster": "https://movieposters2.com/images/1466353-b.jpg",
       "trailer": "https://www.youtube.com/embed/BCQJnOn0ru0",
       "id": 10,
@@ -175,12 +221,94 @@
       "runtime": "98",
       "release": "2004-10-14",
       "director": " Trey Parker",
-      "writers": ["Trey Parker", " Matt Stone", " Pam Brady"],
-      "actors": ["Trey Parker", " Matt Stone", " Elle Russ"],
+      "writers": [
+        "Trey Parker",
+        " Matt Stone",
+        " Pam Brady"
+      ],
+      "actors": [
+        "Trey Parker",
+        " Matt Stone",
+        " Elle Russ"
+      ],
       "poster": "https://m.media-amazon.com/images/I/51Jf9kKecWL._AC_.jpg",
       "trailer": "https://www.youtube.com/embed/gY0AA4_GcE8",
       "id": 11,
       "likes": "10000"
+    },
+    {
+      "title": "The Dark Knight",
+      "rating": "B",
+      "runtime": "152",
+      "release": "2008-07-18",
+      "director": " Christopher Nolan",
+      "writers": [
+        "Jonathan Nolan",
+        " Christopher Nolan",
+        " David S. Goyer",
+        " Bob Kane"
+      ],
+      "actors": [
+        "Christian Bale",
+        " Heath Ledger",
+        " Aaron Eckhart",
+        " \tMichael Caine",
+        " Maggie Gyllenhaal",
+        " Gary Oldman",
+        " \tMorgan Freeman"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/LDG9bisJEaI",
+      "id": 12,
+      "likes": 5555
+    },
+    {
+      "title": "Who Framed Roger Rabbit ",
+      "rating": "B",
+      "runtime": "104",
+      "release": "1988-06-21",
+      "director": "Robert Zemeckis",
+      "writers": [
+        "Jeffrey Price",
+        " Peter S. Seaman"
+      ],
+      "actors": [
+        " Bob Hoskins",
+        " Christopher Lloyd",
+        " Joanna Cassidy",
+        " Stubby Kaye",
+        " Alan Tilvern",
+        " Richard LeParmentier",
+        " Charles Fleischer",
+        " Kathleen Turner"
+      ],
+      "poster": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477899_so.jpg",
+      "trailer": "https://www.youtube.com/embed/gpDaNqSXxp0",
+      "id": 13,
+      "likes": 960
+    },
+    {
+      "title": "Step Brothers",
+      "rating": "C",
+      "runtime": "95",
+      "release": "2008-07-25",
+      "director": "Adam McKay",
+      "writers": [
+        "Will Ferrell",
+        "  Adam McKay"
+      ],
+      "actors": [
+        "Will Ferrell",
+        " John C. Reilly",
+        " Richard Jenkins",
+        " Mary Steenburgen",
+        " Adam Scott",
+        " Kathryn Hahn"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BODViZDg3ZjYtMzhiYS00YTVkLTk4MzktYWUxMTlkYjc1NjdlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/CewglxElBK0",
+      "id": 14,
+      "likes": 400
     }
   ]
 }

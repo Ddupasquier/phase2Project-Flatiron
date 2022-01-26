@@ -14,8 +14,8 @@ function Carousel({movies}) {
     return (
       <div className="carousel__container">
         <CarouselProvider
-          naturalSlideWidth={75}
-          naturalSlideHeight={110}
+          naturalSlideWidth={45}
+          naturalSlideHeight={75}
           totalSlides={10}
           visibleSlides={4}
           currentSlide={0}
@@ -23,13 +23,13 @@ function Carousel({movies}) {
           isPlaying={true}
         >
           {/* Carousel Buttons */}
-          <ButtonBack className="ui animated button left internal rail">
+          <ButtonBack className="ui animated button left">
             <div className="visible content">Back</div>
             <div className="hidden content">
               <i aria-hidden="true" className="arrow left icon"></i>
             </div>
           </ButtonBack>
-          <ButtonNext className="ui animated button right internal rail">
+          <ButtonNext className="ui animated button right">
             <div className="visible content">Next</div>
             <div className="hidden content">
               <i aria-hidden="true" className="arrow right icon"></i>

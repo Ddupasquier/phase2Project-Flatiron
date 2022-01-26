@@ -1,4 +1,4 @@
-body {
+body, html {
   background-color: rgb(13, 61, 61);
   overflow: hidden;
   margin: auto;
@@ -11,9 +11,9 @@ table {
 #container {
   background-color: rgba(255, 255, 255, 0.582);
   position: absolute;
-  margin: 18%;
+  margin: 10%;
   margin-top: 0;
-  min-width: 65%;
+  min-width: 80%;
   max-width: 80%;
   height: 100%;
 }
@@ -77,6 +77,7 @@ table {
   margin-left: 1rem;
   font-size: 4rem;
   background: none;
+  position: fixed;
 }
 
 .nav-menu {
@@ -158,16 +159,25 @@ span {
 
 /* Carousel styles */
 .carousel__container {
-  height: 40%;
+  height: 39%;
   background-color: rgb(13, 61, 61);
   text-align: center;
 }
 
+.carousel__container img {
+  min-height: 90%;
+  max-height: 95%;
+}
+
+.button {
+  min-width: 45%;
+  position: absolute;
+}
 /* gives us the illusion of a "centered" slide */
-/* .carousel__slider {
-  padding-left: 10%;
-  padding-right: 10%;
-} */
+.carousel__slider {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 /* gives us the illusion of spaces between the slides */
 /* .carousel__inner-slide {

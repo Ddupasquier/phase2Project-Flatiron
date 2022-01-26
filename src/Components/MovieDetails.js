@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import * as FcIcon from "react-icons/fc"
 
-function MovieDetails() {
+function MovieDetails({handleLikes}) {
   const [movie, setMovie] = useState(null);
   const { id } = useParams();
 
@@ -52,6 +53,7 @@ function MovieDetails() {
       <p>Directed By: {director}</p>
       <p>Written By: {writers.join(", ")}</p>
       <p>Starring: {actors.join(", ")}</p>
+      <p><button onClick={() => handleLikes(movie, "like")}><FcIcon.FcLike /></button>{" "}<button onClick={() => handleLikes(movie, "dislike")}><FcIcon.FcDislike /></button></p>
       
       <div className="iframe">
       <iframe

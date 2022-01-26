@@ -6,7 +6,7 @@ function Movie({ id, rating, title, director, runtime }) {
     <tr>
       <td>{rating}</td>
       <td>
-        <Link style={{ color: "teal" }} to={`/movies/${id}`}>
+        <Link style={{ color: "rgb(114, 186, 186)" }} to={`/movies/${id}`}>
           {title}
         </Link>
       </td>

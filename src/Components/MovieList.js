@@ -12,6 +12,12 @@ function MovieList({ movies }) {
   });
 
   function compare(a, b) {
+    if (sortBy === "runtime") {
+      if (parseInt(a[sortBy]) < parseInt(b[sortBy])) {
+        return -1;
+      }
+      return 0;
+    }
     if (a[sortBy] < b[sortBy]) {
       return -1;
     }
@@ -33,7 +39,7 @@ function MovieList({ movies }) {
 
   return (
     <>
-      <div className="ui segment">
+      <div className="ui segment inverted">
         <div className="ui action input fluid">
           <input
             type="text"
@@ -49,23 +55,25 @@ function MovieList({ movies }) {
             <option value="">Sort By</option>
             <option value="title">Title</option>
             <option value="rating">Rating</option>
+            <option value="director">Director</option>
+            <option value="runtime">Runtime</option>
           </select>
         </div>
       </div>
-      <table className="ui celled striped padded table">
+      <table className="ui celled striped padded table inverted">
         <tbody>
           <tr>
             <th>
-              <h3 className="ui center aligned header">Rating</h3>
+              <h3 className="ui center aligned header inverted">Rating</h3>
             </th>
             <th>
-              <h3 className="ui center aligned header">Title</h3>
+              <h3 className="ui center aligned header inverted">Title</h3>
             </th>
             <th>
-              <h3 className="ui center aligned header">Director</h3>
+              <h3 className="ui center aligned header inverted">Director</h3>
             </th>
             <th>
-              <h3 className="ui center aligned header">Runtime</h3>
+              <h3 className="ui center aligned header inverted">Runtime</h3>
             </th>
           </tr>
           {movieComponents}

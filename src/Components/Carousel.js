@@ -17,10 +17,11 @@ function Carousel({movies}) {
           naturalSlideWidth={45}
           naturalSlideHeight={75}
           totalSlides={10}
-          visibleSlides={4}
+          visibleSlides={5}
           currentSlide={0}
           interval={2000}
           isPlaying={true}
+          isIntrinsicHeight={false}
         >
           {/* Carousel Buttons */}
           <ButtonBack className="ui animated button left">

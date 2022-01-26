@@ -15,7 +15,8 @@ table {
   margin-top: 0;
   min-width: 80%;
   max-width: 80%;
-  height: 100%;
+  height: 100vh;
+  /* overflow-y: auto; */
 }
 
 #container > div, #container > table {
@@ -39,7 +40,7 @@ table {
 #top10 {
   flex-wrap: wrap;
   display: flex;
-  max-height: 50%;
+  max-height: 48%;
   max-width: 90%;
   align-self: flex-start;
   overflow-y: scroll;
@@ -48,14 +49,10 @@ table {
 #bottom10 {
   flex-wrap: wrap;
   display: flex;
-  max-height: 50%;
+  max-height: 48%;
   max-width: 90%;
   align-self: flex-start;
   overflow-y: scroll;
-}
-
-.segment {
-  overflow: auto;
 }
 
 .topmovies {
@@ -85,18 +82,17 @@ table {
   width: 200px;
   height: 100vh;
   display: flex;
-  /* justify-content: center; */
   position: fixed;
   top: 0;
   left: -100%;
   transition: 850ms;
-  /* padding-left: 0;
-  margin-left: 0; */
+  z-index: 2;
 }
 
 .nav-menu.active {
   left: 0;
   transition: 350ms;
+  z-index: 2;
 }
 
 .nav-text {
@@ -143,8 +139,9 @@ table {
 span {
   margin-left: 5px;
 }
-
+/* MAKE BACK BUTTON NOT OVERLAY SIDE BAR */
 .back {
+  display: static;
   color: rgb(0, 0, 0);
 }
 
@@ -159,33 +156,27 @@ span {
 
 /* Carousel styles */
 .carousel__container {
-  height: 39%;
-  background-color: rgb(13, 61, 61);
+  height: 39vh;
   text-align: center;
-}
-
-.carousel__container img {
-  min-height: 90%;
-  max-height: 95%;
+  overflow: auto;
 }
 
 .button {
   min-width: 45%;
-  position: absolute;
 }
-/* gives us the illusion of a "centered" slide */
+
 .carousel__slider {
   padding-left: 5%;
   padding-right: 5%;
 }
 
 /* gives us the illusion of spaces between the slides */
-/* .carousel__inner-slide {
+.carousel__inner-slide {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   left: 10px;
   top: 10px;
-} */
+}
 
 .titlepage {
   height: 60%;

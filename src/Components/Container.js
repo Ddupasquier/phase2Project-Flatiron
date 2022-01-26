@@ -17,9 +17,33 @@ function Container() {
 
   function addNewMovie(newMovie) {
     const newMovieList = [newMovie, ...movies];
-    setMovies(newMovieList)
+    setMovies(newMovieList);
   }
 
+  function updateMovie(updatedMovie) {
+    const updatedList = movies.map((movie) => {
+      if (movie.id === updatedMovie.id) {
+        return updatedMovie;
+      }
+      return movie;
+    });
+    setMovies(updatedList);
+  }
+
+  function handleLikes(movie, string) {
+    let likes = movie.likes;
+    string === "like" ? (likes += 1) : (likes -= 1);
+    console.log(likes);
+    fetch(`http://localhost:8001/movies/${movie.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ likes: likes }),
+    })
+      .then((resp) => resp.json())
+      .then((updatedMovie) => updateMovie(updatedMovie));
+  }
 
   return (
     <div id="container">
@@ -28,10 +52,14 @@ function Container() {
           <AddMovie addNewMovie={addNewMovie} />
         </Route>
         <Route path="/movies/top">
-          <TopMovies movies={movies} />
+          {movies.length > 0 ? (
+            <TopMovies movies={movies} />
+          ) : (
+            <h2>Loading...</h2>
+          )}
         </Route>
         <Route path="/movies/:id">
-          <MovieDetails />
+          <MovieDetails handleLikes={handleLikes} />
         </Route>
         <Route exact path="/movies">
           <MovieList movies={movies} />

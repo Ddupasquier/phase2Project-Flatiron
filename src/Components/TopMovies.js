@@ -7,6 +7,13 @@ function TopMovies({ movies }) {
     const topTenMovies = [];
     const bottomTenMovies = [];
 
+    if (movies === []) {
+      console.log("loading")
+      return <h1>Loading...</h1>;
+    }
+
+    console.log(movies)
+    console.log(sortedMovies)
     buildTopTen();
     buildBottomTen();
 
@@ -28,6 +35,8 @@ function TopMovies({ movies }) {
         topTenMovies.push(sortedMovies[i]);
       }
     }
+
+    
 
     const topComponents = topTenMovies.map((movie) => {
       return (

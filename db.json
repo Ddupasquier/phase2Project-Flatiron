@@ -120,7 +120,11 @@
       "rating": "D",
       "runtime": "68",
       "release": "1965-07-27",
+<<<<<<< HEAD
       "director": "Bill Rebane",
+=======
+      "director": " Bill Rebane",
+>>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       "writers": [
         " Bill Rebane",
         " Dok Stanford",
@@ -141,7 +145,11 @@
       "rating": "C",
       "runtime": "156",
       "release": "2021-12-10",
+<<<<<<< HEAD
       "director": "Steven Spielberg",
+=======
+      "director": " Steven Spielberg",
+>>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       "writers": [
         " Tony Kushner"
       ],
@@ -184,7 +192,11 @@
       "release": "1987-03-29",
       "director": "John Grissmer",
       "writers": [
+<<<<<<< HEAD
         "Bruce Rubin"
+=======
+        " Bruce Rubin"
+>>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       ],
       "actors": [
         "Louise Lasser",
@@ -220,7 +232,11 @@
       "rating": "B",
       "runtime": "98",
       "release": "2004-10-14",
+<<<<<<< HEAD
       "director": "Trey Parker",
+=======
+      "director": " Trey Parker",
+>>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       "writers": [
         "Trey Parker",
         " Matt Stone",
@@ -234,7 +250,85 @@
       "poster": "https://m.media-amazon.com/images/I/51Jf9kKecWL._AC_.jpg",
       "trailer": "https://www.youtube.com/embed/gY0AA4_GcE8",
       "id": 11,
+<<<<<<< HEAD
       "likes": 100001
+=======
+      "likes": "10000"
+    },
+    {
+      "title": "The Dark Knight",
+      "rating": "B",
+      "runtime": "152",
+      "release": "2008-07-18",
+      "director": " Christopher Nolan",
+      "writers": [
+        "Jonathan Nolan",
+        " Christopher Nolan",
+        " David S. Goyer",
+        " Bob Kane"
+      ],
+      "actors": [
+        "Christian Bale",
+        " Heath Ledger",
+        " Aaron Eckhart",
+        " \tMichael Caine",
+        " Maggie Gyllenhaal",
+        " Gary Oldman",
+        " \tMorgan Freeman"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/LDG9bisJEaI",
+      "id": 12,
+      "likes": 5555
+    },
+    {
+      "title": "Who Framed Roger Rabbit ",
+      "rating": "B",
+      "runtime": "104",
+      "release": "1988-06-21",
+      "director": "Robert Zemeckis",
+      "writers": [
+        "Jeffrey Price",
+        " Peter S. Seaman"
+      ],
+      "actors": [
+        " Bob Hoskins",
+        " Christopher Lloyd",
+        " Joanna Cassidy",
+        " Stubby Kaye",
+        " Alan Tilvern",
+        " Richard LeParmentier",
+        " Charles Fleischer",
+        " Kathleen Turner"
+      ],
+      "poster": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477899_so.jpg",
+      "trailer": "https://www.youtube.com/embed/gpDaNqSXxp0",
+      "id": 13,
+      "likes": 960
+    },
+    {
+      "title": "Step Brothers",
+      "rating": "C",
+      "runtime": "95",
+      "release": "2008-07-25",
+      "director": "Adam McKay",
+      "writers": [
+        "Will Ferrell",
+        "  Adam McKay"
+      ],
+      "actors": [
+        "Will Ferrell",
+        " John C. Reilly",
+        " Richard Jenkins",
+        " Mary Steenburgen",
+        " Adam Scott",
+        " Kathryn Hahn"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BODViZDg3ZjYtMzhiYS00YTVkLTk4MzktYWUxMTlkYjc1NjdlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/CewglxElBK0",
+      "id": 14,
+      "likes": 400
+>>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
     }
   ]
 }

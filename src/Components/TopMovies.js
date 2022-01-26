@@ -8,7 +8,6 @@ function TopMovies({ movies }) {
   const bottomTenMovies = [];
   buildTopTen();
   buildBottomTen();
-  console.log(topTenMovies, bottomTenMovies);
 
   function compare(a, b) {
     if (parseInt(a.likes) < parseInt(b.likes)) {
@@ -31,13 +30,13 @@ function TopMovies({ movies }) {
 
   const topComponents = topTenMovies.map((movie) => {
     return (
-      <Card id={movie.id} title={movie.title} poster={movie.poster} likes={movie.likes} />
+      <Card key={movie.id} id={movie.id} title={movie.title} poster={movie.poster} likes={movie.likes} />
     );
   });
 
   const bottomComponents = bottomTenMovies.map((movie) => {
     return (
-      <Card id={movie.id} title={movie.title} poster={movie.poster} likes={movie.likes} />
+      <Card key={movie.id} id={movie.id} title={movie.title} poster={movie.poster} likes={movie.likes} />
     );
   });
 
@@ -52,9 +51,9 @@ function TopMovies({ movies }) {
         <hr />
       </div>
 
-      <div id="top10">{topComponents}</div>
+      <div id="top10" className="ui segment">{topComponents}</div>
 
-      <div id="bottom10">{bottomComponents}</div>
+      <div id="bottom10" className="ui segment">{bottomComponents}</div>
     </div>
   );
 }

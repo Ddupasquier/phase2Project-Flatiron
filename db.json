@@ -120,11 +120,7 @@
       "rating": "D",
       "runtime": "68",
       "release": "1965-07-27",
-<<<<<<< HEAD
       "director": "Bill Rebane",
-=======
-      "director": " Bill Rebane",
->>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       "writers": [
         " Bill Rebane",
         " Dok Stanford",
@@ -145,11 +141,7 @@
       "rating": "C",
       "runtime": "156",
       "release": "2021-12-10",
-<<<<<<< HEAD
       "director": "Steven Spielberg",
-=======
-      "director": " Steven Spielberg",
->>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       "writers": [
         " Tony Kushner"
       ],
@@ -192,11 +184,7 @@
       "release": "1987-03-29",
       "director": "John Grissmer",
       "writers": [
-<<<<<<< HEAD
         "Bruce Rubin"
-=======
-        " Bruce Rubin"
->>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       ],
       "actors": [
         "Louise Lasser",
@@ -232,11 +220,7 @@
       "rating": "B",
       "runtime": "98",
       "release": "2004-10-14",
-<<<<<<< HEAD
       "director": "Trey Parker",
-=======
-      "director": " Trey Parker",
->>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
       "writers": [
         "Trey Parker",
         " Matt Stone",
@@ -250,10 +234,7 @@
       "poster": "https://m.media-amazon.com/images/I/51Jf9kKecWL._AC_.jpg",
       "trailer": "https://www.youtube.com/embed/gY0AA4_GcE8",
       "id": 11,
-<<<<<<< HEAD
-      "likes": 100001
-=======
-      "likes": "10000"
+      "likes": 100006
     },
     {
       "title": "The Dark Knight",
@@ -279,7 +260,7 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
       "trailer": "https://www.youtube.com/embed/LDG9bisJEaI",
       "id": 12,
-      "likes": 5555
+      "likes": 5553
     },
     {
       "title": "Who Framed Roger Rabbit ",
@@ -328,7 +309,6 @@
       "trailer": "https://www.youtube.com/embed/CewglxElBK0",
       "id": 14,
       "likes": 400
->>>>>>> 2b6fd2edf6e84bd55d506646e7f3320c00c60ddf
     }
   ]
 }

@@ -30,20 +30,20 @@ function Container() {
     setMovies(updatedList);
   }
 
-  function handleLikes(movie, string) {
-    let likes = movie.likes;
-    string === "like" ? (likes += 1) : (likes -= 1);
-    console.log(likes);
-    fetch(`http://localhost:8001/movies/${movie.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ likes: likes }),
-    })
-      .then((resp) => resp.json())
-      .then((updatedMovie) => updateMovie(updatedMovie));
-  }
+  // function handleLikes(movie, string) {
+  //   let likes = movie.likes;
+  //   string === "like" ? (likes += 1) : (likes -= 1);
+  //   console.log(likes);
+  //   fetch(`http://localhost:8001/movies/${movie.id}`, {
+  //     method: "PATCH",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ likes: likes }),
+  //   })
+  //     .then((resp) => resp.json())
+  //     .then((updatedMovie) => updateMovie(updatedMovie));
+  // }
 
   return (
     <div id="container">
@@ -59,7 +59,7 @@ function Container() {
           )}
         </Route>
         <Route path="/movies/:id">
-          <MovieDetails handleLikes={handleLikes} />
+          <MovieDetails updateMovie={updateMovie} />
         </Route>
         <Route exact path="/movies">
           <MovieList movies={movies} />

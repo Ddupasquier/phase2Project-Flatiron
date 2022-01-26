@@ -20,6 +20,7 @@ function Container() {
     setMovies(newMovieList)
   }
 
+
   return (
     <div id="container">
       <Switch>
@@ -36,7 +37,7 @@ function Container() {
           <MovieList movies={movies} />
         </Route>
         <Route path="/">
-          <Welcome />
+          <Welcome movies={movies} />
         </Route>
         <Route path="*">
           <h1>404: You done goofed</h1>

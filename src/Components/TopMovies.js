@@ -2,10 +2,6 @@ import React from "react";
 import Card from "./Card";
 
 function TopMovies({ movies }) {
-
-  fetchBackup();
-
-  function fetchBackup() {
     const sortedMovies = [...movies].sort(compare);
     const length = sortedMovies.length;
     const topTenMovies = [];
@@ -80,8 +76,5 @@ function TopMovies({ movies }) {
 
     
   }
-
-  
-}
 
 export default TopMovies;

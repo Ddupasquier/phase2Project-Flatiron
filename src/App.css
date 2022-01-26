@@ -1,6 +1,7 @@
-body, html {
+body,
+html {
   background-color: rgb(13, 61, 61);
-  overflow: hidden;
+  /* overflow: scroll; */
   margin: auto;
 }
 
@@ -15,11 +16,12 @@ table {
   margin-top: 0;
   min-width: 80%;
   max-width: 80%;
-  height: 100vh;
+  min-height: 100%;
   /* overflow-y: auto; */
 }
 
-#container > div, #container > table {
+#container > div,
+#container > table {
   margin: 15px;
 }
 
@@ -40,26 +42,34 @@ table {
 #top10 {
   flex-wrap: wrap;
   display: flex;
-  max-height: 48%;
+  max-height: 90vh;
   max-width: 90%;
   align-self: flex-start;
   overflow-y: scroll;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #bottom10 {
   flex-wrap: wrap;
   display: flex;
-  max-height: 48%;
+  max-height: 90vh;
   max-width: 90%;
   align-self: flex-start;
   overflow-y: scroll;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topmovies {
   text-align: center;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto;
+  grid-template-rows: 5vh 90vh;
+  max-height: 95vh;
+  /* padding: auto; */
 }
 
 .menu-bars {
@@ -71,8 +81,8 @@ table {
 
 .nav-bars {
   margin-top: 10px;
-  margin-left: 1rem;
-  font-size: 4rem;
+  margin-left: 2.5%;
+  font-size: 3rem;
   background: none;
   position: fixed;
 }
@@ -156,7 +166,7 @@ span {
 
 /* Carousel styles */
 .carousel__container {
-  height: 39vh;
+  height: 39%;
   text-align: center;
   overflow: auto;
 }
@@ -180,5 +190,11 @@ span {
 
 .titlepage {
   height: 60%;
-  border: solid black 1px;
+  /* border: solid black 1px; */
+  text-align: center;
+  padding-top: 15%;
+}
+
+.home {
+  font-size: 25rem;
 }

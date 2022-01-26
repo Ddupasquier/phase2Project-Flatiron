@@ -56,11 +56,11 @@ function TopMovies({ movies }) {
   return (
     <div className="topmovies">
       <div>
-        <h2>Top 10 Movies</h2>
+        <h2>Most Popular 😎</h2>
         <hr />
       </div>
       <div>
-        <h2>Bottom 10 Movies</h2>
+        <h2>Least Popular 🤮</h2>
         <hr />
       </div>
 

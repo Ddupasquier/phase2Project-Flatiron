@@ -30,21 +30,6 @@ function Container() {
     setMovies(updatedList);
   }
 
-  // function handleLikes(movie, string) {
-  //   let likes = movie.likes;
-  //   string === "like" ? (likes += 1) : (likes -= 1);
-  //   console.log(likes);
-  //   fetch(`http://localhost:8001/movies/${movie.id}`, {
-  //     method: "PATCH",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({ likes: likes }),
-  //   })
-  //     .then((resp) => resp.json())
-  //     .then((updatedMovie) => updateMovie(updatedMovie));
-  // }
-
   return (
     <div id="container">
       <Switch>
@@ -65,7 +50,11 @@ function Container() {
           <MovieList movies={movies} />
         </Route>
         <Route path="/">
-          <Welcome movies={movies} />
+          {movies.length > 0 ? (
+            <Welcome movies={movies} />
+          ) : (
+            <h2>Loading...</h2>
+          )}
         </Route>
         <Route path="*">
           <h1>404: You done goofed</h1>

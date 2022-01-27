@@ -29,6 +29,7 @@ function AddMovie({ addNewMovie }) {
         actors: actors,
         poster: poster,
         trailer: trailer,
+        likes: 0,
       }),
     })
       .then((r) => r.json())
@@ -113,7 +114,7 @@ function AddMovie({ addNewMovie }) {
             onChange={(e) => setTrailer(e.target.value)}
             type="text"
             name="trailer"
-            placeholder="Trailer URL"
+            placeholder="Trailer URL (use embed link)"
             value={trailer}
           />
         </div>

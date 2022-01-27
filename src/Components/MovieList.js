@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Movie from "./Movie";
 
 function MovieList({ movies }) {
-  const [sortBy, setSortBy] = useState("");
+  const [sortBy, setSortBy] = useState(localStorage.getItem("sortBy") || "");
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("sortBy", sortBy);
+  }, [sortBy]);
 
   const sortedMovies = [...movies].sort(compare);
 

@@ -1,23 +1,19 @@
-import React from 'react';
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Card({ id, title, poster, likes }) {
-    return ( 
+  return (
     <div className="ui card">
-    <Link to={`/movies/${id}`} className="image">
-      <img
-        className="cardImage"
-        src={poster}
-        alt={title}
-      />
-    </Link>
-    <div className="content">
-      <h3>{title}</h3>
-      <div className="meta">
-        <p>{likes}</p>
+      <Link to={`/movies/${id}`} className="image">
+        <img className="cardImage" src={poster} alt={title} />
+      </Link>
+      <div className="content">
+        <h3>{title}</h3>
+        <div className="meta">
+          <p>{likes} Likes</p>
+        </div>
       </div>
     </div>
-  </div> 
   );
 }
 

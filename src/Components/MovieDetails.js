@@ -71,7 +71,9 @@ function MovieDetails({ updateMovie }) {
         <p>Directed By: {director}</p>
         <p>Written By: {writers.join(", ")}</p>
         <p>Starring: {actors.join(", ")}</p>
-        <p style={{color: "yellow"}}><b>{likes}</b> Likes</p>
+        <p style={{ color: "yellow" }}>
+          <b>{likes}</b> Likes
+        </p>
         <p>
           <button onClick={() => handleLikes("like")}>
             <FcIcon.FcLike />

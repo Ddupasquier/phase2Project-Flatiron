@@ -241,7 +241,7 @@
       "rating": "B",
       "runtime": "152",
       "release": "2008-07-18",
-      "director": " Christopher Nolan",
+      "director": "Christopher Nolan",
       "writers": [
         "Jonathan Nolan",
         " Christopher Nolan",
@@ -250,17 +250,17 @@
       ],
       "actors": [
         "Christian Bale",
-        " Heath Ledger",
-        " Aaron Eckhart",
-        " \tMichael Caine",
-        " Maggie Gyllenhaal",
-        " Gary Oldman",
-        " \tMorgan Freeman"
+        "Heath Ledger",
+        "Aaron Eckhart",
+        "Michael Caine",
+        "Maggie Gyllenhaal",
+        "Gary Oldman",
+        "Morgan Freeman"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
       "trailer": "https://www.youtube.com/embed/LDG9bisJEaI",
       "id": 12,
-      "likes": 5553
+      "likes": 5526
     },
     {
       "title": "Who Framed Roger Rabbit ",
@@ -309,6 +309,27 @@
       "trailer": "https://www.youtube.com/embed/CewglxElBK0",
       "id": 14,
       "likes": 400
+    },
+    {
+      "title": "A Night at the Roxbury",
+      "rating": "A",
+      "runtime": "82",
+      "release": "1998-10-01",
+      "director": "John Fortenberry",
+      "writers": [
+        "Steve Koren",
+        " Will Ferrell",
+        " Chris Kattan"
+      ],
+      "actors": [
+        " Chris Kattan",
+        "Will Ferrell",
+        "Raquel Gardner"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BYmEyNmIwMjItMDlhNy00YjJkLWFmZTktNzkwYjExMjlmMmMwXkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_.jpg",
+      "trailer": "https://www.youtube.com/embed/xp5jXz6Ho_M",
+      "id": 15,
+      "likes": 1000000    
     }
   ]
 }

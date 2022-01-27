@@ -47,7 +47,7 @@ function AddMovie({ addNewMovie }) {
   }
   return (
     <div className="ui inverted segment form">
-      <h1 style={{ "text-align": "center" }}>
+      <h1 style={{ textAlign: "center" }}>
         <MdIcons.MdOutlineLocalMovies /> Add A Movie!!!{" "}
         <MdIcons.MdOutlineLocalMovies />
       </h1>
@@ -97,8 +97,8 @@ function AddMovie({ addNewMovie }) {
             value={actors}
           />
         </div>
-        <div class="ui labeled input fluid">
-          <div class="ui label">http://</div>
+        <div className="ui labeled input fluid">
+          <div className="ui label">http://</div>
           <input
             onChange={(e) => setPoster(e.target.value)}
             type="text"
@@ -107,8 +107,8 @@ function AddMovie({ addNewMovie }) {
             value={poster}
           />
         </div>
-        <div class="ui labeled input fluid">
-          <div class="ui label">http://</div>
+        <div className="ui labeled input fluid">
+          <div className="ui label">http://</div>
           <input
             onChange={(e) => setTrailer(e.target.value)}
             type="text"

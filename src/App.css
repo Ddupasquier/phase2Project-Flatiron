@@ -5,6 +5,10 @@ html {
   margin: auto;
 }
 
+body {
+  position: relative;
+}
+
 table {
   max-width: 96%;
 }
@@ -33,8 +37,9 @@ table {
 
 /* WILL DELETE IF CONTINUE WITH FLEX RESIZE */
 #container .card {
-  text-align: center;
+  /* text-align: center; */
   max-width: 46%;
+  max-height: 30%;
   margin: 5px;
 }
 /*  */

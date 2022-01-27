@@ -19,7 +19,7 @@
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjEtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       "trailer": "https://www.youtube.com/embed/lB95KLmpLR4",
-      "likes": "12"
+      "likes": 12
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
       "trailer": "https://www.youtube.com/embed/NmzuHjWmXOc",
-      "likes": "1000"
+      "likes": 1000
     },
     {
       "id": 3,
@@ -65,7 +65,7 @@
       ],
       "poster": "https://upload.wikimedia.org/wikipedia/en/3/31/The_SpongeBob_SquarePants_Movie_poster.jpg",
       "trailer": "https://www.youtube.com/embed/47ceXAEr2Oo",
-      "likes": "2000"
+      "likes": 2000
     },
     {
       "title": "Ponyo",
@@ -84,7 +84,7 @@
       ],
       "poster": "https://i.ebayimg.com/images/g/YpgAAOxygo9Q5Iq9/s-l300.jpg",
       "trailer": "https://www.youtube.com/embed/bskgNOXbdiE",
-      "likes": "25",
+      "likes": 251,
       "id": 4
     },
     {
@@ -112,7 +112,7 @@
       ],
       "poster": "https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg?region=0%2C0%2C540%2C810",
       "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
-      "likes": "5556",
+      "likes": 5556,
       "id": 5
     },
     {
@@ -133,7 +133,7 @@
       ],
       "poster": "https://m.media-amazon.com/images/I/51OCsU2NqZL._AC_.jpg",
       "trailer": "https://www.youtube.com/embed/bBgpFENBIw0",
-      "likes": "2",
+      "likes": 2,
       "id": 6
     },
     {
@@ -156,7 +156,7 @@
       "poster": "https://home2hollywood.files.wordpress.com/2021/12/westsidestoryposter.jpg",
       "trailer": "https://www.youtube.com/embed/A5GJLwWiYSg",
       "id": 7,
-      "likes": "5"
+      "likes": 54
     },
     {
       "title": "The Room",
@@ -175,7 +175,7 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BYjEzN2FlYmYtNDkwMC00NGFkLWE5ODctYmE5NmYxNzE2MmRiXkEyXkFqcGdeQXVyMjMwODc5Mw@@._V1_.jpg",
       "trailer": "https://www.youtube.com/embed/tfMTHIwTUXA",
       "id": 8,
-      "likes": "-69"
+      "likes": -69
     },
     {
       "title": "Blood Rage",
@@ -194,7 +194,7 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BMzVmMjQzMDYtOTlmZS00MDdhLWEwODItNzdkMTQ2OTNlNjczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "trailer": "https://www.youtube.com/embed/K5EeBAcRq-U",
       "id": 9,
-      "likes": "-865"
+      "likes": -865
     },
     {
       "title": "Tusk",
@@ -213,7 +213,7 @@
       "poster": "https://movieposters2.com/images/1466353-b.jpg",
       "trailer": "https://www.youtube.com/embed/BCQJnOn0ru0",
       "id": 10,
-      "likes": "4"
+      "likes": 4
     },
     {
       "title": "Team America: World Police",

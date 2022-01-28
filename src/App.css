@@ -197,7 +197,8 @@ span {
   height: 60%;
   /* border: solid black 1px; */
   text-align: center;
-  padding-top: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .home {

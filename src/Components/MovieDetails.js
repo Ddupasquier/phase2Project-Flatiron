@@ -61,7 +61,12 @@ function MovieDetails({ updateMovie }) {
         </Link>
       </button>
       <div className="ui segment inverted">
-        <img className="poster" src={poster} alt={title} />
+        <img
+          className="poster"
+          src={poster}
+          alt={title}
+          style={{ height: "700px" }}
+        />
         <h2>{title}</h2>
         <p>
           Rating: <b>{rating}</b>
@@ -87,8 +92,8 @@ function MovieDetails({ updateMovie }) {
           <iframe
             style={{ border: "3px solid teal" }}
             src={trailer}
-            height="400px"
-            width="625px"
+            height="600px"
+            width="1000px"
             title="movie trailer"
           ></iframe>
         </div>

@@ -204,3 +204,7 @@ span {
 .home {
   font-size: 25rem;
 }
+
+.homeImg {
+  max-width: 90%;
+}

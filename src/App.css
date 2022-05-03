@@ -32,7 +32,8 @@ table {
 #container .poster {
   max-width: 30%;
   float: left;
-  margin: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
 }
 
 /* WILL DELETE IF CONTINUE WITH FLEX RESIZE */
@@ -165,7 +166,9 @@ span {
 }
 
 .iframe {
+  /* width: 80%; */
   margin-top: 50px;
+  /* height: 100%; */
   text-align: center;
 }
 

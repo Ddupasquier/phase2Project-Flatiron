@@ -1,5 +1,4 @@
 import React from "react";
-import * as MdIcons from "react-icons/md";
 
 function HomeIntro() {
   return (

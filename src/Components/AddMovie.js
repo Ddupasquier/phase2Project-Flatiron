@@ -11,9 +11,9 @@ function AddMovie({ addNewMovie }) {
   const [actors, setActors] = useState([]);
   const [poster, setPoster] = useState("");
   const [trailer, setTrailer] = useState("");
+
   function handleSubmit(e) {
     e.preventDefault();
-
     fetch("http://localhost:8001/movies", {
       method: "POST",
       headers: {

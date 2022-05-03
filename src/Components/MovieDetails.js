@@ -48,7 +48,7 @@ function MovieDetails({ updateMovie }) {
     likes,
   } = movie;
 
-  console.log(trailer);
+  // console.log(trailer);
 
   return (
     <>
@@ -65,7 +65,7 @@ function MovieDetails({ updateMovie }) {
           className="poster"
           src={poster}
           alt={title}
-          style={{ height: "700px" }}
+          // style={{ height: "700px" }}
         />
         <h2>{title}</h2>
         <p>
@@ -92,8 +92,8 @@ function MovieDetails({ updateMovie }) {
           <iframe
             style={{ border: "3px solid teal" }}
             src={trailer}
-            height="600px"
-            width="1000px"
+            height= "300px"
+            width="500px"
             title="movie trailer"
           ></iframe>
         </div>
